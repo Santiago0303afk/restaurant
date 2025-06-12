@@ -24,9 +24,13 @@
       color: white;
     }
 
+    header h1 {
+      font-size: 2rem;
+    }
+
     .stars {
-      font-size: 1.8rem;
-      margin-top: 8px;
+      font-size: 1.3rem;
+      margin-top: 5px;
       color: gold;
     }
 
@@ -39,10 +43,10 @@
 
     nav a {
       color: white;
-      margin: 0 20px;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     nav a:hover {
@@ -56,9 +60,9 @@
     }
 
     .hero-image {
-      width: 1000px;
-      height: 1000px;
-      border-radius: 30px;
+      width: 600px;
+      height: 600px;
+      border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
@@ -67,6 +71,27 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    /* Responsive for mobile screens */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      .stars {
+        font-size: 1.1rem;
+      }
+
+      nav a {
+        font-size: 0.95rem;
+        margin: 0 10px;
+      }
+
+      .hero-image {
+        width: 90vw;
+        height: 90vw;
+      }
     }
   </style>
 </head>
@@ -86,9 +111,10 @@
 
   <div class="hero-wrapper">
     <div class="hero-image">
-      <img src="https://assets.dmagstatic.com/wp-content/uploads/2023/08/vrindavan-thali-1200x800.jpg" alt="Punjabi Thali">
+      <img src="https://cdn.hungryonion.org/optimized/3X/5/c/5cc57b922a2ef85f42a41f2de7f5d48dd15bff69_2_700x502.jpeg" alt="Punjabi Thali">
     </div>
   </div>
 
 </body>
 </html>
+ 
