@@ -18,13 +18,31 @@
     }
 
     header {
-      text-align: center;
-      padding: 20px;
       background-color: #d32f2f;
+      padding: 20px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .title-block {
+      text-align: center;
       color: white;
     }
 
-    header h1 {
+    .title-block h1 {
       font-size: 2rem;
     }
 
@@ -73,9 +91,8 @@
       object-fit: cover;
     }
 
-    /* Responsive for mobile screens */
     @media (max-width: 768px) {
-      header h1 {
+      .title-block h1 {
         font-size: 1.6rem;
       }
 
@@ -98,8 +115,13 @@
 <body>
 
   <header>
-    <h1>Ishpreet's restaurant</h1>
-    <p class="stars">★★★★★</p>
+    <div class="header-content">
+      <img src="https://marketplace.canva.com/EAFpeiTrl4c/2/0/1600w/canva-abstract-chef-cooking-restaurant-free-logo-a1RYzvS1EFo.jpg" alt="Logo" class="logo">
+      <div class="title-block">
+        <h1>Ishpreet's restaurant</h1>
+        <p class="stars">★★★★★</p>
+      </div>
+    </div>
   </header>
 
   <nav>
@@ -111,10 +133,9 @@
 
   <div class="hero-wrapper">
     <div class="hero-image">
-      <img src="https://cdn.hungryonion.org/optimized/3X/5/c/5cc57b922a2ef85f42a41f2de7f5d48dd15bff69_2_700x502.jpeg" alt="Punjabi Thali">
+      <img src="https://assets.dmagstatic.com/wp-content/uploads/2023/08/vrindavan-thali-1200x800.jpg" alt="Punjabi Thali">
     </div>
   </div>
 
 </body>
 </html>
- 
